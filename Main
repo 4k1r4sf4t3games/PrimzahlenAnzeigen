@@ -1,0 +1,31 @@
+import java.util.*;
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args)
+	{
+		System.out.println("Zahl eingeben: ");
+		Scanner scan = new Scanner(System.in);
+		int userEingabe = scan.nextInt();  
+		int i = 0;
+		while (i <= userEingabe)
+		{
+			if (b(i))
+			{
+				System.out.println("Prime Zahl: " + i);
+			}
+			i++;
+		}    
+	}
+
+	public static boolean b(int x)
+	{
+		if (x > 2 && (x & 1) == 0)
+			return false;
+		for (int i = 3; i * i <= x; i += 2)
+			if (x % i == 0) 
+				return false;
+		return true;
+	}
+}
