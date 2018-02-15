@@ -13,7 +13,7 @@ public class Main
 		{
 			if (b(i))
 			{
-				System.out.println("Prime Zahl: " + i);
+				System.out.println("Primzahl: " + i);
 			}
 			i++;
 		}    
